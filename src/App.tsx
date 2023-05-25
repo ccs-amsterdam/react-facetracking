@@ -60,7 +60,7 @@ function App() {
   return (
     <StyledDiv>
       {/* <FaceTracking /> */}
-      <FaceLandmark onSnapshot={setFaceLandmark} intervalTime={1000} />
+      <FaceLandmark onSnapshot={setFaceLandmark} intervalTime={100} />
 
       <ScoreContainer>
         {faceLandmark?.scores.map((score) => {
